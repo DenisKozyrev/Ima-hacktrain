@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ima-HackaTrain</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body>
+    <div id="contentWrapper" class="content-wrapper">
+        <header>
+            <a id="anchorHome"></a>
+            <div class="header-content">
+                <a id="logoLink" class="logo">
+                    <img src="./assets/images/logo/main-logo.png" class="main-logo-img" alt="Ima-HackaTrain Logo" />
+                </a>
+                <div id="navigationIcon" class="nav-icon">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <nav>
+                    <ul id="hackatrainNav" class="hackatrain-navigation">
+                        <li class="navigation-li">
+                            <a id="navigationLink" class="navigation-link">About</a>
+                        </li>
+                        <li class="navigation-li">
+                            <a id="navigationLink" class="navigation-link">Route</a>
+                        </li>
+                        <li class="navigation-li">
+                            <a id="navigationLink" class="navigation-link">Mentors</a>
+                        </li>
+                        <li class="navigation-li">
+                            <a id="navigationLink" class="navigation-link">Previous</a>
+                        </li>
+                        <li class="navigation-li">
+                            <a id="navigationLink" class="navigation-link">FAQ</a>
+                        </li>
+                        <li class="navigation-li">
+                            <a id="navigationLink" class="navigation-link">Partnets</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="hackatrain-animation">
+            <video class="train-video" loop autoplay id="trainVideo">
+                <source src="./assets/video/train-video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <section class="introduction-and-registration sections">
+            <div class="main-info">
+                <h3 class="main-info-heading headings">Imaguru Hackathon on Train
+                    <br/>Minsk - Riga
+                </h3>
+                <p class="main-info-text texts">
+                    August 30 - September 1, 2018
+                </p>
+            </div>
+            <a href="https://docs.google.com/forms/d/1PhX66iBMXU6Ll7C86qQMpubL-YOoO8npbSRp9n2aPsI/edit" class="registration-button">Register</a>
+            <div class="organizers-logo">
+                <a href="https://imaguru.by/" target="_blank">
+                    <img class="organizer-logo" alt="LIAA Logo" src="assets/images/logo/Investment_and_Development_Agency_of_Latvia_logo.png"
+                    />
+                </a>
+                <a href="http://www.liaa.gov.lv/" target="_blank">
+                    <img class="organizer-logo" alt="LIAA Logo" src="assets/images/logo/Investment_and_Development_Agency_of_Latvia_logo.png"
+                    />
+                </a>
+                <button class="mute-button" id="trainPauseButton"></button>
+            </div>
+        </section>
+        <a name="anchor"></a>
+        <section class="about-hackathon sections">
+            <h3 class="about-hackathon-heading headings">
+                What is Imaguru Hackathon on Train?
+            </h3>
+            <p class="about-hackathon-text texts">
+                For the first time in Belarus. Starting at Imaguru on August 30th, continuing on a train in Riga, finishing after our arrival
+                in Riga and ending at...
+                <br /> The now legendary Hackatrain attracts developers, designers and entrepreneurs from all over the world, all
+                hoping to strike it big, hackathon-style.
+                <br/> This isn’t your typical hackathon. Say goodbye to boring venues and hello to travelling around with more
+                than 50 fellow hackers competing across mobility challenges. Are you ready for Hackathon on Train Minsk-Riga?
+            </p>
+        </section>
+        <a name="anchor"></a>
+        <section id="route" class="hackathon-route sections">
+            <h2 class="route-heading headings">Hackathon Route</h2>
+            <ul class="hackathon-route-list">
+                <li>
+                    <span class="route-date">
+                        Aug 30
+                    </span>
+                    <ul class="route-timing">
+                        <li> 17:00 - 17:30 Registration</li>
+                        <li>18:00 - 18:30 Opening Ceremony</li>
+                        <li> 18:30 - 20:00 Pitching in Minsk / Hackathon Starts</li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="route-date">
+                        Aug 31
+                    </span>
+                    <ul class="route-timing">
+                        <li> 09:00 - 11:00 Breakfast / Check-point</li>
+                        <li> 11:00 Mentoring Session</li>
+                        <li> 13:00 - 14:00 Lunch</li>
+                        <li> 14:00 Mentoring Session</li>
+                        <li> 18:00 - Dinner / Departure for train</li>
+                        <li> 20:15 - Train departures</li>
+                        <li> 20:15 - … Hacking</li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="route-date">
+                        Sept 1
+                    </span>
+                    <ul class="route-timing">
+                        <li> 08:00 - Train Arrives to Riga</li>
+                        <li> 09:00 - 11:00 Breakfast / Check-point</li>
+                        <li> 11:00 Mentoring Session</li>
+                        <li>13:00 - 14:00 Lunch</li>
+                        <li> 14:00 - 18:00 Final Preparation</li>
+                        <li> 18:00 - 19:30 Final Stage</li>
+                        <li> 19:30 - 21:00 Award Ceremony. Party</li>
+                    </ul>
+                </li>
+        </section>
+        <a name="anchor"></a>
+        <section class="mentors-info sections">
+            <h3 class="mentor-info-heading headings">
+                Our Mentors
+            </h3>
+            <div class="mentor-foto-blocks">
+                <div class="mentor-block">
+                    <!-- fotos and names are stubs -->
+                    <span class="mentor-name">Dzmtiry Varabei</span>
+                    <img class="mentor-foto" src="assets/images/mentors-foto/1_gallery.jpg" />
+                </div>
+                <div class="mentor-block">
+                    <span class="mentor-name">Dzmtiry Varabei</span>
+                    <img class="mentor-foto" src="assets/images/mentors-foto/2_gallery.jpg" />
+                </div>
+                <div class="mentor-block">
+                    <span class="mentor-name">Dzmtiry Varabei</span>
+                    <img class="mentor-foto" src="assets/images/mentors-foto/3_gallery.jpg" />
+                </div>
+                <div class="mentor-block">
+                    <span class="mentor-name">Dzmtiry Varabei</span>
+                    <img class="mentor-foto" src="assets/images/mentors-foto/4_gallery.jpg" />
+                </div>
+                <div class="mentor-block">
+                    <span class="mentor-name">Dzmtiry Varabei</span>
+                    <img class="mentor-foto" src="assets/images/mentors-foto/5_gallery.jpg" />
+                </div>
+                <div class="mentor-block">
+                    <span class="mentor-name">Dzmtiry Varabei</span>
+                    <img class="mentor-foto" src="assets/images/mentors-foto/6_gallery.jpg" />
+                </div>
+            </div>
+        </section>
+        <a name="anchor"></a>
+        <section class="previous-event-info sections">
+            <h3 class="previous-event-heading headings">
+                Rrevious Events
+            </h3>
+            <div class="previous-event-foto-blocks">
+                <!-- fotos are stubs -->
+                <img class="event-foto" src="assets/images/mentors-foto/1_gallery.jpg" />
+                <img class="event-foto" src="assets/images/mentors-foto/2_gallery.jpg" />
+                <img class="event-foto" src="assets/images/mentors-foto/3_gallery.jpg" />
+                <img class="event-foto" src="assets/images/mentors-foto/4_gallery.jpg" />
+                <img class="event-foto" src="assets/images/mentors-foto/5_gallery.jpg" />
+                <img class="event-foto" src="assets/images/mentors-foto/6_gallery.jpg" />
+            </div>
+        </section>
+        <a name="anchor"></a>
+        <section class="faq sections">
+            <h3 class="faq-heading headings">
+                Frequently Asked Questions
+            </h3>
+            <div class="fa-question-block">
+                <div class="fa-question">
+                    <span class="fa-question-heading">How do I get my train ticket?</span>
+                </div>
+                <div class="fa-question-answer">
+                    <p class="fa-question-answer-text texts">
+                        The check-in for participants will be organized at Restaurant 1e Klas, located at platform 2B, Amsterdam Central Station.
+                    </p>
+                </div>
+            </div>
+            <div class="fa-question-block">
+                <div class="fa-question">
+                    <span class="fa-question-heading">From where is the Hackatrain departing?</span>
+                </div>
+                <div class="fa-question-answer">
+                    <p class="fa-question-answer-text texts">
+                        The check-in for participants will be organized at Restaurant 1e Klas, located at platform 2B, Amsterdam Central Station.
+                    </p>
+                </div>
+            </div>
+            <div class="fa-question-block">
+                <div class="fa-question">
+                    <span class="fa-question-heading">What time is the Hackatrain departing? </span>
+                </div>
+                <div class="fa-question-answer">
+                    <p class="fa-question-answer-text texts">
+                        The check-in for participants will be organized at Restaurant 1e Klas, located at platform 2B, Amsterdam Central Station.
+                    </p>
+                </div>
+            </div>
+            <div class="fa-question-block">
+                <div class="fa-question">
+                    <span class="fa-question-heading">What about the return trip?</span>
+                </div>
+                <div class="fa-question-answer">
+                    <p class="fa-question-answer-text texts">
+                        The check-in for participants will be organized at Restaurant 1e Klas, located at platform 2B, Amsterdam Central Station.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <a name="anchor"></a>
+        <section class="partners-logos sections">
+            <h3 class="partners-logos-heading headings">
+                Our Partners
+            </h3>
+            <div class="partners-logos-block">
+                <a class="partners-logos-link" href="https://careers.epam.by/" target="_blank">
+                    <img class="partner-logo" alt="Epam Logo" src="assets/images/logo/Epam.png" />
+                </a>
+                <a class="partners-logos-link" href="https://www.evolutiongaming.com/" target="_blank">
+                    <img class="partner-logo" alt="Evolution Gaming Logo" src="assets/images/logo/evolution-gaming.png" />
+                </a>
+                <a class="partners-logos-link" href="https://www.oxagile.com/" target="_blank">
+                    <img class="partner-logo" alt="Oxagile Logo" src="assets/images/logo/Oxagile.png" />
+                </a>
+                <a class="partners-logos-link" href="https://www.apalon.com/" target="_blank">
+                    <img class="partner-logo" alt="Apalon Logo" src="assets/images/logo/apalon.png" />
+                </a>
+
+            </div>
+        </section>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

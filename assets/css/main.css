@@ -1,0 +1,756 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Titillium";
+    src: url(../fonts/Titillium-Bold.otf);
+}
+
+@font-face {
+    font-family: "SourceSans";
+    src: url(../fonts/SourceSansPro-Regular.otf);
+}
+
+@font-face {
+    font-family: "Norwester";
+    src: url(../fonts/norwester.otf);
+}
+
+@-webkit-keyframes dropdownNavDisplay {
+    from {
+        top: -1500%;
+    }
+    to {
+        top: 100%
+    }
+}
+
+@-webkit-keyframes dropdownNavHide {
+    from {
+        top: 100%;
+    }
+    to {
+        top: -1500%;
+    }
+}
+
+body {
+    background-color: #111;
+}
+
+.headings {
+    font-family: Norwester;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+.texts {
+    font-family: SourceSans;
+    font-size: 20px;
+    color: rgb(215, 215, 215);
+}
+
+.sections {
+    padding: 0 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.hackatrain-animation {
+    position: absolute;
+}
+
+.train-video {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: Titillium;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(82, 143, 85);
+    display: flex;
+    align-items: center;
+}
+
+.main-logo-img {
+    max-width: 60%;
+}
+
+.nav-icon {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    outline: none;
+    align-items: flex-end;
+}
+
+.introduction-and-registration {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.about-hackathon {
+    background-color: rgba(137, 137, 137, 0.5);
+}
+
+.hackathon-route {
+    background-color: #5f9ea0
+}
+
+.mentors-info {
+    background-color: rgba(137, 137, 137, 0.5);
+}
+
+.previous-event-info {
+    background-color: #5f9ea0
+}
+
+.faq {
+    background-color: rgba(137, 137, 137, 0.5);
+}
+
+.partners-logos {
+    background-color: #5f9ea0
+}
+
+.about-hackathon-heading {
+    color: #6490a4;
+}
+
+.route-heading {
+    color: #4d4d4d;
+}
+
+.mentor-info-heading {
+    color: #6490a4;
+}
+
+.previous-event-heading {
+    color: #4d4d4d;
+}
+
+.faq-heading {
+    color: #6490a4;
+}
+
+.partners-logos-heading {
+    color: #4d4d4d;
+}
+
+.organizers-logo {
+    display: flex;
+    padding-bottom: 25px;
+}
+
+.organizer-logo {
+    max-width: 40%;
+    padding: 10px;
+}
+
+.main-info-heading {
+    margin: 25px 0;
+    font-size: 35px;
+    color: rgb(215, 215, 215);
+}
+
+.main-info-text {
+    font-size: 35px;
+    color: rgb(215, 215, 215);
+}
+
+.registration-button {
+    text-decoration: none;
+    font-family: Norwester;
+    margin: 100px 0;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 55px;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 0;
+    color: rgb(215, 215, 215);
+    outline: none;
+    user-select: none;
+    letter-spacing: 1px;
+}
+
+.registration-button:hover {
+    color: #767676;
+}
+
+.mute-button {
+    background-image: url(../icons/volume-icon.png);
+    background-size: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-color: rgba(90, 90, 90, 0);
+    border: 0;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+
+.volume-off {
+    background-image: url(../icons/mute-icon.png);
+    background-size: 60px;
+    width: 60px;
+    height: 60px;
+}
+
+.about-hackathon-heading {
+    margin-bottom: 25px;
+}
+
+.hackathon-route-list {
+    font-family: SourceSans;
+    margin-top: 20px;
+    color: #d1d7d7;
+}
+
+.hackathon-route-list li {
+    list-style-type: none;
+}
+
+.partners-logos-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 65px;
+}
+
+.partners-logos-link {
+    text-decoration: none;
+    margin: 20px;
+}
+
+.partner-logo {
+    max-width: 150px;
+}
+
+.mentor-name {
+    font-family: SourceSans;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6490a4;
+    margin-bottom: 10px;
+}
+
+.mentor-foto-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.mentor-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.previous-event-foto-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.hackathon-route-list {
+    font-size: 18px;
+}
+
+.route-date {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4d4d4d;
+}
+
+.route-timing {
+    margin: 10px 0;
+}
+
+.mentor-block {
+    max-width: 40%;
+}
+
+.mentor-info-heading {
+    margin: 15px 0;
+}
+
+.previous-event-foto-blocks {
+    margin-top: 50px;
+}
+
+.mentor-foto {
+    max-width: 65%;
+}
+
+.event-foto {
+    max-width: 30%;
+    margin: 10px;
+}
+
+.fa-question-answer-text {
+    font-family: SourceSans;
+    font-size: 18px;
+    color: rgb(215, 215, 215);
+    margin: 10px 0;
+}
+
+.fa-question-heading {
+    color: #6390a4;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.faq-heading {
+    margin-bottom: 35px;
+}
+
+.partners-logos-heading {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 479px) {
+    .introduction-and-registration {
+        background-color: #5f9ea08f;
+        position: relative;
+    }
+    .hackatrain-animation {
+        display: none;
+    }
+    .mute-button {
+        display: none;
+    }
+    .header-content {
+        padding: 10px;
+    }
+    .hackatrain-navigation {
+        display: none;
+    }
+    .dropdown-nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -1500%;
+        right: 0;
+    }
+    .dropdown-nav-display {
+        animation-name: dropdownNavDisplay;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    .dropdown-nav-hide {
+        animation-name: dropdownNavHide;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    .nav-icon {
+        width: 50%;
+        cursor: pointer;
+    }
+    .navigation-li {
+        padding: 25px 0;
+        background-color: rgba(77, 77, 77, 0.9);
+        position: relative;
+        min-width: 100vw;
+        text-align: center;
+        list-style-type: none;
+    }
+    .navigation-link {
+        user-select: none;
+        font-family: Norwester;
+        letter-spacing: 1px;
+        font-size: 23px;
+        text-decoration: underline;
+        color: #d7d7d7;
+        cursor: pointer;
+    }
+    .navigation-link:hover {
+        color: #fff;
+    }
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 30px;
+        height: 3px;
+        background-color: #ccc;
+        margin: 3px 0;
+        transition: 0.4s;
+    }
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-7px, -8px);
+    }
+    .hackathon-route-list {
+        font-size: 18px;
+    }
+    .route-date {
+        font-size: 20px;
+        font-weight: bold;
+        color: #4d4d4d;
+    }
+    .route-timing {
+        margin: 10px 0;
+    }
+    .mentor-block {
+        max-width: 40%;
+    }
+    .mentor-info-heading {
+        margin: 15px 0;
+    }
+    .previous-event-foto-blocks {
+        margin-top: 50px;
+    }
+    .mentor-foto {
+        max-width: 65%;
+    }
+    .event-foto {
+        max-width: 30%;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .introduction-and-registration {
+        background-color: #5f9ea08f;
+        position: relative;
+    }
+    .header-content {
+        padding: 8px;
+    }
+    .hackatrain-animation {
+        display: none;
+    }
+    .mute-button {
+        display: none;
+    }
+    .hackatrain-navigation {
+        display: none;
+    }
+    .dropdown-nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -1500%;
+        right: 0;
+    }
+    .dropdown-nav-display {
+        animation-name: dropdownNavDisplay;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    .dropdown-nav-hide {
+        animation-name: dropdownNavHide;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    .nav-icon {
+        width: 60%;
+        cursor: pointer;
+    }
+    .navigation-li {
+        padding: 25px 0;
+        background-color: rgba(77, 77, 77, 0.9);
+        position: relative;
+        min-width: 100vw;
+        text-align: center;
+        list-style-type: none;
+    }
+    .navigation-link {
+        user-select: none;
+        font-family: Norwester;
+        letter-spacing: 1px;
+        font-size: 23px;
+        text-decoration: underline;
+        color: #d7d7d7;
+        cursor: pointer;
+    }
+    .navigation-link:hover {
+        color: #fff;
+    }
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 30px;
+        height: 3px;
+        background-color: #ccc;
+        margin: 3px 0;
+        transition: 0.4s;
+    }
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-7px, -8px);
+    }
+    .main-logo-img {
+        max-width: 100%;
+    }
+    .logo {
+        max-width: 35%;
+    }
+    .previous-event-foto-blocks {
+        margin-top: 40px;
+    }
+    .mentor-foto-blocks {
+        margin-top: 25px;
+    }
+    .mentor-block {
+        max-width: 30%;
+    }
+    .mentor-foto {
+        max-width: 80%;
+    }
+    .event-foto {
+        max-width: 20%;
+        margin: 25px;
+    }
+    .fa-question-answer-text {
+        font-size: 21px;
+    }
+    .fa-question-heading {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header-content {
+        padding: 10px;
+    }
+    .introduction-and-registration {
+        background-color: #5f9ea08f;
+        position: relative;
+    }
+    .hackatrain-animation {
+        display: none;
+    }
+    .mute-button {
+        display: none;
+    }
+    .hackatrain-navigation {
+        display: none;
+    }
+    .dropdown-nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -1500%;
+        right: 0;
+    }
+    .dropdown-nav-display {
+        animation-name: dropdownNavDisplay;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    .dropdown-nav-hide {
+        animation-name: dropdownNavHide;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    .nav-icon {
+        width: 60%;
+        cursor: pointer;
+    }
+    .nav-icon:hover {
+        color: #fff;
+    }
+    .navigation-li {
+        padding: 25px 0;
+        background-color: rgba(77, 77, 77, 0.9);
+        position: relative;
+        min-width: 100vw;
+        text-align: center;
+        list-style-type: none;
+    }
+    .navigation-link {
+        user-select: none;
+        font-family: Norwester;
+        letter-spacing: 1px;
+        font-size: 23px;
+        text-decoration: underline;
+        color: #d7d7d7;
+        cursor: pointer;
+    }
+    .navigation-link:hover {
+        color: #fff;
+    }
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 30px;
+        height: 3px;
+        background-color: #ccc;
+        margin: 3px 0;
+        transition: 0.4s;
+    }
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-7px, -8px);
+    }
+    .main-logo-img {
+        max-width: 100%;
+    }
+    .logo {
+        max-width: 35%;
+    }
+    .previous-event-foto-blocks {
+        margin-top: 40px;
+        max-width: 90%;
+    }
+    .mentor-foto-blocks {
+        margin-top: 25px;
+    }
+    .mentor-block {
+        max-width: 30%;
+    }
+    .mentor-foto {
+        max-width: 70%;
+    }
+    .event-foto {
+        max-width: 25%;
+        margin: 25px;
+    }
+    .fa-question-answer-text {
+        font-size: 21px;
+    }
+    .fa-question-heading {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .headings {
+        font-size: 50px;
+    }
+    .about-hackathon-heading {
+        margin-bottom: 50px;
+    }
+    .texts {
+        line-height: 2;
+    }
+    .header-content {
+        padding: 13px;
+    }
+    .nav-icon {
+        display: none;
+    }
+    .main-logo-img {
+        max-width: 100%;
+    }
+    .logo {
+        max-width: 25%;
+    }
+    .hackatrain-navigation {
+        display: flex;
+        align-items: center;
+    }
+    .route-heading {
+        color: #4d4d4d;
+    }
+    .navigation-li {
+        margin: 0 20px;
+        text-align: center;
+        list-style-type: none;
+    }
+    .navigation-link {
+        user-select: none;
+        font-family: Norwester;
+        letter-spacing: 1px;
+        font-size: 25px;
+        text-decoration: none;
+        position: relative;
+        color: rgb(215, 215, 215);
+        cursor: pointer;
+    }
+    .navigation-link::after {
+        position: absolute;
+        left: 0;
+        top: 35px;
+        width: 100%;
+        border-bottom: 4px solid #fed98f;
+        content: '';
+        transform: scaleX(0);
+        opacity: 0;
+        transition: all 200ms linear;
+    }
+    .navigation-link:hover::after {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    .previous-event-foto-blocks {
+        max-width: 65%;
+        margin-top: 40px;
+    }
+    .mentor-foto-blocks {
+        margin-top: 25px;
+    }
+    .mentor-block {
+        max-width: 30%;
+    }
+    .mentor-foto {
+        max-width: 50%;
+    }
+    .event-foto {
+        max-width: 22%;
+        margin: 25px;
+    }
+    .route-date {
+        font-size: 27px;
+    }
+    .fa-question-heading {
+        font-size: 35px;
+    }
+    .fa-question-answer-text {
+        font-size: 20px;
+    }
+}
