@@ -54,9 +54,11 @@ class Landing {
 
     trainAnimationInit() {
         this.trainVideo.volume = 0.03;
-        this.trainVideo.autoPlay = document.documentElement.clientWidth >= 1024;
+        if (document.documentElement.clientWidth >= 1024) {
+            this.trainVideo.play();
+        };
         this.muteButton.addEventListener('click', () => {
-            this.muteButton.classList.toggle('volume-off');
+            this.muteButton.classList.toggle('volume-on');
             this.trainVideo.muted = !this.trainVideo.muted;
         });
     }
